@@ -4,7 +4,7 @@
 
 **Security Policy**
 
-* Only allow modern cryptography algorithms. (e.g. Ed25519, ChaCha20-Poly1305, etc.)
+* Only allow modern cryptography algorithms (e.g. Ed25519, ChaCha20-Poly1305, etc.) and NOT developed by NSA or NITS. (e.g. ECDSA, P-256, etc.)
 * Disable root login.
 * Disable authentication with password.
 

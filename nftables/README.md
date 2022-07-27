@@ -1,4 +1,4 @@
-# Nftables
+# nftables
 
 **References**
 

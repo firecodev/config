@@ -1,6 +1,6 @@
 # PHP-FPM
 
-**Not out-of-the-box configs**
+**Must-change configs**
 
 php-fpm.conf (line 145)
 

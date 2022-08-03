@@ -30,3 +30,9 @@ Note: The search of regular expressions terminates on the first match, and the c
 > 2. The matching is performed against a normalized URI, after decoding the text encoded in the "%XX" form, resolving references to relative path components "." and "..", and possible compression of two or more adjacent slashes into a single slash.
 > 3. Regular expressions matching does not need to escape the forward slash "/".
 
+
+**Generate dhparam**
+
+```
+openssl dhparam -outform PEM -out dhparam.pem 2048
+```

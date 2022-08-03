@@ -1,5 +1,21 @@
 # nginx
 
+**Must-change configs**
+
+nginx.conf (line 48)
+
+```
+    ssl_dhparam /path/to/dhparam.pem;
+```
+
+sites-available/php.example.org.conf (line 6, 7)
+
+```
+    ssl_certificate /path/to/certs/fullchain.pem;
+    ssl_certificate_key /path/to/certs/privkey.pem;
+```
+
+
 **References**
 
 * [Alphabetical index of directives](https://nginx.org/en/docs/dirindex.html)

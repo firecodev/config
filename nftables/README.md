@@ -12,6 +12,8 @@
 
 **Get and Generate GeoIP List**
 
+This script can run on Linux and macOS.
+
 ```sh
 outfile=nftables.conf.geoip4.tw
 

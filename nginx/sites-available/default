@@ -3,12 +3,20 @@ server {
     listen [::]:80 default_server;
     server_name _;
 
+    error_page 400 =444 /444;
+
     location / {
         return 444;
     }
 
-    location ^~ /.well-known/acme-challenge {
-        alias /var/www/acme-challenge;
+    location = /444 {
+        return 444;
+    }
+
+    location ^~ /.well-known/acme-challenge/ {
+        alias /var/www/acme-challenge/;
+
+        try_files $uri =444;
     }
 }
 

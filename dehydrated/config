@@ -123,7 +123,7 @@ CONTACT_EMAIL="user@example.org"
 #CHAINCACHE="${BASEDIR}/chains"
 
 # Automatic cleanup (default: no)
-#AUTO_CLEANUP="no"
+AUTO_CLEANUP="no"
 
 # ACME API version (default: auto)
 #API=auto

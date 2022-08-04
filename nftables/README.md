@@ -9,3 +9,15 @@
 
 * [grelleum/supernets: Aggregates a list of subnets into contiguous supernets.](https://github.com/grelleum/supernets)
 
+
+**Get and Generate GeoIP List**
+
+```sh
+printf "define GEOIP4_TW = {\n\t" && \
+curl -s https://www.iwik.org/ipcountry/TW.cidr | \
+sed '/^#/d' | \
+python3 supernets.py | \
+perl -pe 'chomp if eof' | \
+perl -pe 's/\n/,\n\t/g' && \
+printf "\n}"
+```

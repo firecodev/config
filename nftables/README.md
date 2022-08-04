@@ -13,11 +13,13 @@
 **Get and Generate GeoIP List**
 
 ```sh
-printf "define GEOIP4_TW = {\n\t" && \
-curl -s https://www.iwik.org/ipcountry/TW.cidr | \
+outfile=nftables.conf.geoip4.tw
+
+printf "define GEOIP4_TW = {\n\t" > $outfile \
+&& curl -s https://www.iwik.org/ipcountry/TW.cidr | \
 sed '/^#/d' | \
 python3 supernets.py | \
 perl -pe 'chomp if eof' | \
-perl -pe 's/\n/,\n\t/g' && \
-printf "\n}"
+perl -pe 's/\n/,\n\t/g' >> $outfile \
+&& printf "\n}" >> $outfile
 ```

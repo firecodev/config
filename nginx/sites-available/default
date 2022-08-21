@@ -3,7 +3,7 @@ server {
     listen [::]:80 default_server;
     server_name _;
 
-    error_page 400 =444 /444;
+    error_page 400 /444;
 
     location / {
         return 444;

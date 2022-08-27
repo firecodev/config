@@ -27,7 +27,7 @@ jq
 Run at 00:01 on Monday.
 
 ```
-0 0 * * 1 date +"[%Y/%m/%d %H:%M:%S] Starting dehydrated in 1 minute..." >> /path/to/dehydrated.log 2>&1
+0 0 * * 1 date +"[\%Y/\%m/\%d \%H:\%M:\%S] Starting dehydrated in 1 minute..." >> /path/to/dehydrated.log 2>&1
 1 0 * * 1 /path/to/dehydrated/dehydrated --cron >> /path/to/dehydrated.log 2>&1
 # The web server reload command can also be invoked in hook.
 0 30 1 * * systemctl reload nginx

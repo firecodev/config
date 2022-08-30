@@ -101,7 +101,7 @@ PrintMotd no
 #TCPKeepAlive yes
 #PermitUserEnvironment no
 #Compression delayed
-ClientAliveInterval 60
+ClientAliveInterval 30
 #ClientAliveCountMax 3
 #UseDNS no
 #PidFile /var/run/sshd.pid

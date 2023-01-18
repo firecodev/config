@@ -12,4 +12,5 @@
 **Misc**
 
 * Do ssh "ping" between some intervals. (Prevent disconnection when idle too long.)
+* Disable banners and OS version.
 

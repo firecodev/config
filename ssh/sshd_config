@@ -108,10 +108,11 @@ ClientAliveInterval 30
 #MaxStartups 10:30:100
 #PermitTunnel no
 #ChrootDirectory none
-#VersionAddendum none
+VersionAddendum none
+DebianBanner no
 
 # no default banner path
-#Banner none
+Banner none
 
 # Allow client to pass locale environment variables
 AcceptEnv LANG LC_*

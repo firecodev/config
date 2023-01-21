@@ -11,6 +11,6 @@
 
 **Misc**
 
-* Do ssh "ping" between some intervals. (Prevent disconnection when idle too long.)
-* Disable banners and OS version.
+* Send client alive messages between some intervals. (Prevent disconnection when idle too long.)
+* Disable sending banners and OS version message when connected.
 

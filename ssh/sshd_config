@@ -23,6 +23,7 @@ Include /etc/ssh/sshd_config.d/*.conf
 
 HostKeyAlgorithms ssh-ed25519
 KexAlgorithms sntrup761x25519-sha512@openssh.com,curve25519-sha256,curve25519-sha256@libssh.org
+PubkeyAcceptedAlgorithms ssh-ed25519
 Ciphers chacha20-poly1305@openssh.com
 
 # Ciphers and keying

@@ -14,3 +14,15 @@
 * Send client alive messages between some intervals. (Prevent disconnection when idle too long.)
 * Disable sending banners and OS version message when connected.
 
+**Obtain the available algorithms**
+
+Source: [https://unix.stackexchange.com/a/617870](https://unix.stackexchange.com/a/617870)
+
+```
+for F in $(ssh -Q help); do 
+  printf "=== $F ===\n"
+  ssh -Q $F
+  echo ""
+done
+```
+
